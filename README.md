@@ -57,7 +57,10 @@ Contributions are welcome! If you would like to contribute to any of the project
 
 5. Submit a pull request to the main repository.
 
+## Here's some images of the project!
 
+![Calculator](image/calculator.png)
+![Text_to_speech](image/texttospeech.png)
 
 
 
