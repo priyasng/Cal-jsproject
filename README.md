@@ -15,13 +15,11 @@ This repository contains multiple frontend projects built using HTML, CSS, and J
 
 The Calculator project is a simple web-based calculator that performs basic arithmetic operations. It provides a user-friendly interface for performing calculations.
 
-### Speech_Recognition
+### Text_to_speech
 
-The Speech Recognition project utilizes the Web Speech API to enable voice input and recognition. It allows users to interact with the application by speaking commands or text input.
+The Text Recognition project allows users to interact with the application by speaking  text input.
 
-### Ticket-App
 
-The Ticket-App project is a web application that allows users to create and manage support tickets. It provides features such as ticket creation, assignment, status updates, and more.
 
 ## Project Structure
 
