@@ -1,80 +1,78 @@
-*{
+* {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
-/* width */
+
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: rgb(17, 3, 3);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-body{
-  background-image: linear-gradient(
-    to right,
-    rgb(101, 1, 110),
-    rgb(253, 10, 83)
-  );
+  background: #555;
 }
 
-.calculator-grid{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows: 120px repeat(5,100px);
+body {
+  background-image: linear-gradient(to right, rgb(21, 16, 17), rgb(253, 10, 83));
+  font-family: Arial, sans-serif;
 }
 
-.calculator-grid > button{
-    cursor: pointer;
-    font-size: 2rem;
-    border : 1px solid purple;
-    background-color:rgba(255,100,228,0.75);
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: 120px repeat(5, 100px);
 }
 
-.calculator-grid > button:hover{
-    background-color:rgba(255,255,255,0.9);
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid rgb(214, 168, 214);
+  background-color: rgba(67, 54, 65, 0.75);
+  transition: background-color 0.3s ease;
 }
 
-.span-two{
-    grid-column: span 2;
-}
-.span-four{
-    grid-column: span 4;
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.output{      
-    background-color:rgba(0,0,0,0.75);
-    color: rgba(255,255,255,0.9);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
-    padding:10px;
-    word-break: break-all;
-    overflow-y:scroll;
+.span-two {
+  grid-column: span 2;
 }
 
-.output .previous-operand{
-    color:rgba(255,255,255,0.8);
-    font-size: 1.5rem;
+.span-four {
+  grid-column: span 4;
 }
 
-.output .current-operand{
-    color:white;
-    font-size: 2.5rem;
+.output {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-break: break-all;
+  overflow-y: scroll;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
 }
